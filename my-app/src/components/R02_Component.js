@@ -32,6 +32,6 @@ class R02_ComponentClass extends Component {
 }
 //export는 다른 컴포넌트에서 사용할 수 있도록 설정하는 방식
 //default는 기본으로 반드시 작성
-export default R02_Component;
+export default R02_Component; // -> 기본컴포넌트이기 떄문에 import시 꼭 이름을 일치시키지 않아도 된다.
 //여러 컴포넌트를 추가할 수 있다.
-export { R02_ComponentClass };
+export { R02_ComponentClass }; // -> 기본컴포넌트가 아닌 컴포넌트는 import시 반드시 이름을 일치시켜야 한다.

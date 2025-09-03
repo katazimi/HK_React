@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 //props: 부모컴포넌트 -> 자식컴포넌트로 전달하는 데이터
 //   - props는 읽기전용(immutable) -> 자식컴포넌트에서 props값 변경 불가
@@ -33,6 +33,18 @@ function R03_Props3(props) {
     );
 }
 
+// 클래스형 컴포넌트 사용 - rcc
+class R03_PropsClass extends Component {
+    render() {
+        const { name, children } = this.props; //구조분해 할당
+        return (
+            <div>
+                <h2>컴포넌트입니다: {name}</h2>
+                <h2>클래스형 입니다: {children}</h2>
+            </div>
+        );
+    }
+}
+
 export default R03_Props;
-export { R03_Props2 };
-export { R03_Props3 };
+export { R03_Props2, R03_Props3, R03_PropsClass };
