@@ -8,7 +8,7 @@ import React from 'react';
 function R03_Props(props) {
     //const name=props.name;
     //const age=props.age;
-    const {name, age}=props; //구조분해 할당
+    const { name, age } = props; //구조분해 할당
     return (
         <div>
             <p>안녕하세요, <strong>{name}</strong>({age}세)님!</p>
@@ -16,7 +16,7 @@ function R03_Props(props) {
     );
 }
 
-function R03_Props2({name, age}) {
+function R03_Props2({ name, age }) {
     return (
         <div>
             <div>{name},{age}</div>
@@ -33,5 +33,5 @@ function R03_Props3(props) {
 }
 
 export default R03_Props;
-export {R03_Props2};
-export {R03_Props3};
+export { R03_Props2 };
+export { R03_Props3 };
