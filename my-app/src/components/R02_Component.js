@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 // 컴포넌트는 각각의 독립된 UI 조각 개념이다.(재사용)
 // 종류는 함수형,클래스형
@@ -12,7 +12,7 @@ import React, {Component} from 'react';
 function R02_Component(props) {
     return (
         <div>
-                <h2>함수형 컴포넌트</h2>
+            <h2>함수형 컴포넌트</h2>
         </div>
     );
 }
@@ -34,4 +34,4 @@ class R02_ComponentClass extends Component {
 //default는 기본으로 반드시 작성
 export default R02_Component;
 //여러 컴포넌트를 추가할 수 있다.
-export {R02_ComponentClass};
+export { R02_ComponentClass };

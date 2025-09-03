@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import R01_JSXBasic from './components/R01_JSXBasic';
 import R02_Component, { R02_ComponentClass } from './components/R02_Component';
