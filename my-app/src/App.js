@@ -7,6 +7,10 @@ import R03_Props, { R03_Props2, R03_Props3, R03_PropsClass } from './components/
 import R04_State, { R04_StateClass } from './components/R04_State';
 import R05_Event from './components/R05_Event';
 import R06_Loop_list from './components/R06_Loop_list';
+import R07_Hook_UseRef from './components/R07_Hook_UseRef';
+import R08_Hook_Effect from './components/R08_Hook_Effect';
+import R09_Hook_UseMemo, { MemoTest } from './components/R09_Hook_UseMemo';
+import R10_Hook_UseCallback from './components/R10_Hook_UseCallback';
 
 
 function App() {
@@ -55,6 +59,27 @@ function App() {
         <h1>6.Loop 사용하기</h1>
         <R06_Loop_list />
       </div>
+
+      <div style={divStyle}>
+        <h1>7.Hook useRef 사용하기</h1>
+        <R07_Hook_UseRef />
+      </div>
+
+      <div style={divStyle}>
+        <h1>8.Hook useEffect 사용하기</h1>
+        <R08_Hook_Effect />
+      </div>
+
+      <div style={divStyle}>
+        <h1>9.Hook useMemo 사용하기</h1>
+        <R09_Hook_UseMemo />
+      </div>
+
+      <div style={divStyle}>
+        <h1>10.Hook useCallback 사용하기</h1>
+        <R10_Hook_UseCallback />
+      </div>
+
     </div>
   );
 }
